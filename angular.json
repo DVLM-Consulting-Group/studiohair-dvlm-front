@@ -50,6 +50,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -107,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a5434c22-d84c-4dc2-9aa6-7ccb9c4031f7"
   }
 }
