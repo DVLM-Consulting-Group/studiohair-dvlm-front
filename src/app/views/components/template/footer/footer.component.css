@@ -1,0 +1,20 @@
+.footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    background-color: #F7C5DA;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+i {
+    border: 1px solid white;
+    background-color: #E090B1;
+    border-radius: 5px;
+    color: white;
+    padding: 0 2%;
+}
