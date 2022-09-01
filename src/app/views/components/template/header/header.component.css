@@ -3,13 +3,13 @@
     background-color: #F7C5DA;
     color: antiquewhite;
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 85%;
+    font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
+.hea {
     border: 1px solid #F2DFE1;
     padding: .4rem 15%;
     background-color: #e090b1;

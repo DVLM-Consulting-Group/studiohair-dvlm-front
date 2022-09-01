@@ -2,21 +2,21 @@
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-a {
-    color: #E090B1;
-}
-
-.sidenav-content {
-    color: #E090B1;
-}
-
-button {
-    background-color: #E090B1;
-    color: aliceblue;
-    margin: 1rem auto 0 1rem;
+mat-drawer-container {
+    height: 80%;
+    width: 100%;
 }
 
 i {
-    margin-top: .5rem;
-    margin-left: 1rem;
+    margin: .4rem;
+}
+
+button {
+    margin: 1rem auto 0 1rem;
+    background-color: #E090B1;
+}
+
+.nav-list {
+    background-color: #dbabbf;
+    height: 98.9%;
 }

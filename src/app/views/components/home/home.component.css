@@ -1,0 +1,7 @@
+mat-card {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #E090B1;
+    width: 50%;
+    height: 50%;
+    margin: 1rem auto 0 auto;
+}
