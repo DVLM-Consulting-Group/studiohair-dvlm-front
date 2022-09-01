@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    background-color: dimgrey;
+}
