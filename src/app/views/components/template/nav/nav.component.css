@@ -1,0 +1,22 @@
+.container {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a {
+    color: #E090B1;
+}
+
+.sidenav-content {
+    color: #E090B1;
+}
+
+button {
+    background-color: #E090B1;
+    color: aliceblue;
+    margin: 1rem auto 0 1rem;
+}
+
+i {
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
