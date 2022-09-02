@@ -1,6 +1,6 @@
 .header {
     height: 10%;
-    background-color: #F7C5DA;
+    /* background-color: #F7C5DA; */
     color: antiquewhite;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 100%;
@@ -12,6 +12,6 @@
 .hea {
     border: 1px solid #F2DFE1;
     padding: .4rem 15%;
-    background-color: #e090b1;
+    background-color: #C2185B;
     border-radius: 5px;
 }

@@ -1,3 +1,4 @@
+import { FuncionarioCreateComponent } from './views/components/funcionario/funcionario-create/funcionario-create.component';
 import { FuncionarioReadComponent } from './views/components/funcionario/funcionario-read/funcionario-read.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'funcionarios',
     component: FuncionarioReadComponent
+  },
+  {
+    path: 'funcionarios/create',
+    component: FuncionarioCreateComponent
   }
 ];
 

@@ -2,7 +2,7 @@
     height: 10%;
     position: fixed;
     bottom: 0;
-    background-color: #F7C5DA;
+    /* background-color: #F7C5DA; */
     color: white;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 85%;
@@ -13,7 +13,7 @@
 
 .pink {
     border: 1px solid white;
-    background-color: #E090B1;
+    background-color: #C2185B;
     border-radius: 5px;
     color: white;
     padding: 0 2%;

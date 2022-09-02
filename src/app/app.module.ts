@@ -26,6 +26,7 @@ import { FooterComponent } from './views/components/template/footer/footer.compo
 import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { FuncionarioReadComponent } from './views/components/funcionario/funcionario-read/funcionario-read.component';
+import { FuncionarioCreateComponent } from './views/components/funcionario/funcionario-create/funcionario-create.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FuncionarioReadComponent } from './views/components/funcionario/funcion
     NavComponent,
     HomeComponent,
     
-    FuncionarioReadComponent
+    FuncionarioReadComponent,
+         FuncionarioCreateComponent
   ],
   imports: [
     BrowserModule,
