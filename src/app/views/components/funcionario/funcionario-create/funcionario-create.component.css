@@ -1,0 +1,19 @@
+h1 {
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+}
+
+.full-width {
+    width: 80%;
+}
+
+button {
+    width: 20%;
+    margin-bottom: .5rem;
+    margin-left: .4rem;
+}
