@@ -2,25 +2,25 @@
     <h1>Novo Funcionário(a):</h1>
     <mat-form-field class="full-width">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Ex. João Silva">
+        <input [(ngModel)]="funcionario.nome" name="nome" matInput placeholder="Ex. João Silva">
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>CPF</mat-label>
-        <input matInput placeholder="Ex. 999.999.999-99">
+        <input [(ngModel)]="funcionario.cpf" name="cpf" matInput placeholder="Ex. 999.999.999-99">
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>Telefone</mat-label>
-        <input matInput placeholder="Ex. (99) 99999-9999">
+        <input [(ngModel)]="funcionario.telefone" name="telefone" matInput placeholder="Ex. (99) 99999-9999">
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>E-mail</mat-label>
-        <input matInput placeholder="Ex. jsilva@email.com">
+        <input [(ngModel)]="funcionario.email" name="email" matInput placeholder="Ex. jsilva@email.com">
     </mat-form-field>
     <br>
-    <button mat-stroked-button color="accent">CRIAR</button>
+    <button (click)="create()" mat-stroked-button color="accent">CRIAR</button>
     <button (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
 
 </form>
