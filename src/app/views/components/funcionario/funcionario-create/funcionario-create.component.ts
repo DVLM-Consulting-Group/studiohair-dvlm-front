@@ -2,6 +2,7 @@ import { Funcionario } from './../../../../models/funcionario';
 import { FuncionarioService } from './../../../../services/funcionario.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-funcionario-create',
@@ -17,6 +18,11 @@ export class FuncionarioCreateComponent implements OnInit {
     telefone: '',
     email: ''
   }
+
+  nome = new FormControl('', [Validators.minLength(5)])
+  cpf = new FormControl('', [Validators.minLength(11)])
+  telefone = new FormControl('', [Validators.minLength(9)])
+  email = new FormControl('', [Validators.minLength(5)])
 
   constructor(private router : Router,
     private service : FuncionarioService) { }
@@ -44,6 +50,34 @@ export class FuncionarioCreateComponent implements OnInit {
       }
     })
     
+  }
+
+  errorValidNome() {
+    if(this.nome.invalid) {
+      return 'O Nome deve ter no mínimo 5 caracteres!'
+    }
+    return false;
+  }
+
+  errorValidCpf() {
+    if(this.cpf.invalid) {
+      return 'O CPF deve ter 11 caracteres!'
+    }
+    return false;
+  }
+
+  errorValidTelefone() {
+    if(this.telefone.invalid) {
+      return 'O Telefone deve ter no mínimo 9 caracteres!'
+    }
+    return false;
+  }
+
+  errorValidEmail() {
+    if(this.email.invalid) {
+      return 'O E-mail deve ter no mínimo 5 caracteres!'
+    }
+    return false;
   }
 
 }

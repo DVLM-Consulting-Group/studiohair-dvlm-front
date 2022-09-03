@@ -2,25 +2,29 @@
     <h1>Novo Funcionário(a):</h1>
     <mat-form-field class="full-width">
         <mat-label>Nome</mat-label>
-        <input [(ngModel)]="funcionario.nome" name="nome" matInput placeholder="Ex. João Silva">
+        <input [(ngModel)]="funcionario.nome" [formControl]="nome" required name="nome" maxLength="60" matInput placeholder="Ex. João Silva">
+        <mat-error *ngIf="nome.invalid">{{ errorValidNome()}}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>CPF</mat-label>
-        <input [(ngModel)]="funcionario.cpf" name="cpf" matInput placeholder="Ex. 999.999.999-99">
+        <input [(ngModel)]="funcionario.cpf" [formControl]="cpf" required name="cpf" maxLength="15" matInput placeholder="Ex. 999.999.999-99">
+        <mat-error *ngIf="cpf.invalid">{{ errorValidCpf()}}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>Telefone</mat-label>
-        <input [(ngModel)]="funcionario.telefone" name="telefone" matInput placeholder="Ex. (99) 99999-9999">
+        <input [(ngModel)]="funcionario.telefone" [formControl]="telefone" required name="telefone" maxLength="20" matInput placeholder="Ex. (99) 99999-9999">
+        <mat-error *ngIf="telefone.invalid">{{ errorValidTelefone()}}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="full-width">
         <mat-label>E-mail</mat-label>
-        <input [(ngModel)]="funcionario.email" name="email" matInput placeholder="Ex. jsilva@email.com">
+        <input [(ngModel)]="funcionario.email" [formControl]="email" required name="email" maxLength="60" matInput placeholder="Ex. jsilva@email.com">
+        <mat-error *ngIf="email.invalid">{{ errorValidEmail()}}</mat-error>
     </mat-form-field>
     <br>
-    <button (click)="create()" mat-stroked-button color="accent">CRIAR</button>
+    <button (click)="create()" [disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone() || errorValidEmail()" mat-stroked-button color="accent">CRIAR</button>
     <button (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
 
 </form>
