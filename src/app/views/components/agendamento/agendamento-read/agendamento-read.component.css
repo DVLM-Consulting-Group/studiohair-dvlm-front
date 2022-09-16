@@ -46,3 +46,17 @@ table {
     margin-left: 0.7rem;
 
 }
+
+td.aberto {
+    color: rgb(11, 225, 11);
+}
+
+
+td.encerrado {
+    color: rgb(4, 142, 248);
+}
+
+
+td.cancelado {
+    color: rgb(240, 43, 43);
+}

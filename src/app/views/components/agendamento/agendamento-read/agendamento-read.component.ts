@@ -62,4 +62,13 @@ export class AgendamentoReadComponent implements AfterViewInit {
     })
   }
 
+  status(x : any) {
+    if(x == 'ABERTO') {
+      return 'aberto'
+    } else if (x == 'ENCERRADO') {
+      return 'encerrado'
+    } else {
+      return 'cancelado'
+    }
+  }
 }
