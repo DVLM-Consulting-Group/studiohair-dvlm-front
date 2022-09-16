@@ -13,10 +13,10 @@ i {
 
 button {
     margin: 1rem auto 0 1rem;
-    background-color: #C2185B;
+    background: linear-gradient(0deg, rgba(255, 44, 139, 0.803) 13%, #fb21c4cb 60%, #f425a5bc 91%);
 }
 
 .nav-list {
-    background-color: #C2185B;
+    background: linear-gradient(0deg, rgba(255, 44, 139, 0.803) 13%, #fb21c4cb 60%, #f425a5bc 91%);
     height: 98.9%;
 }

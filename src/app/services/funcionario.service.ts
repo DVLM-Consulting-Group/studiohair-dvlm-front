@@ -21,9 +21,25 @@ export class FuncionarioService {
     return this.http.get<Funcionario[]>(url);
   }
 
+  findById(id : any ):Observable<Funcionario> {
+    const url = `${this.baseUrl}/funcionarios/${id}`;
+    return this.http.get<Funcionario>(url);
+  }
+
   create(funcionario: Funcionario):Observable<Funcionario> {
       const url = this.baseUrl + "/funcionarios";
       return this.http.post<Funcionario>(url, funcionario);
+  }
+
+  update(funcionario: Funcionario):Observable<Funcionario> {
+    const url = `${this.baseUrl}/funcionarios/${funcionario.id}`;
+    return this.http.put<Funcionario>(url, funcionario);
+  }
+
+  delete(id : any):Observable <void> {
+    const url = `${this.baseUrl}/funcionarios/${id}`;
+    return this.http.delete<void>(url);
+
   }
 
   message(msg: String): void {

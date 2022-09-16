@@ -1,15 +1,17 @@
-import { Funcionario } from './../../../../models/funcionario';
-import { FuncionarioService } from './../../../../services/funcionario.service';
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Funcionario } from 'src/app/models/funcionario';
+import { FuncionarioService } from 'src/app/services/funcionario.service';
 
 @Component({
-  selector: 'app-funcionario-create',
-  templateUrl: './funcionario-create.component.html',
-  styleUrls: ['./funcionario-create.component.css']
+  selector: 'app-funcionario-update',
+  templateUrl: './funcionario-update.component.html',
+  styleUrls: ['./funcionario-update.component.css']
 })
-export class FuncionarioCreateComponent implements OnInit {
+export class FuncionarioUpdateComponent implements OnInit {
+
+  id_func = ''
 
   funcionario: Funcionario = {
     id: '',
@@ -19,30 +21,38 @@ export class FuncionarioCreateComponent implements OnInit {
     email: ''
   }
 
+
+
   nome = new FormControl('', [Validators.minLength(5)])
   cpf = new FormControl('', [Validators.minLength(11)])
   telefone = new FormControl('', [Validators.minLength(9)])
   email = new FormControl('', [Validators.minLength(5)])
 
+
   constructor(private router : Router,
-    private service : FuncionarioService) { }
+    private service : FuncionarioService,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.id_func = this.route.snapshot.paramMap.get('id')!
+    this.findById();
   }
 
-  cancel(): void {
-    this.router.navigate(['funcionarios'])
+  update(): void {
+    this.service.update(this.funcionario).subscribe((resposta) => {
+    this.router.navigate(['funcionarios'])  
+    this.service.message('Funcionário Atualizado com sucesso!')
+    })
   }
 
-  create(): void {
-    this.service.create(this.funcionario).subscribe((resposta) => {
-      this.router.navigate(['funcionarios'])
-      this.service.message('Funcionario criado com sucesso!')
+  findById(): void {
+    this.service.findById(this.id_func).subscribe((resposta) => {
+      this.funcionario = resposta;
     }, err => {
       console.log(err)
-      if (err.error.error.match('CPF já cadastrado na base de dados!')) {
-        this.service.message(err.error.error)
-      } else if (err.error.errors[0].message === "número do registro de contribuinte individual brasileiro (CPF) inválido") {
+      if (err.error.erro.match('CPF já cadastrado na base de dados!')) {
+        this.service.message(err.error.erro)
+      } else if (err.error.erro[0].message === "número do registro de contribuinte individual brasileiro (CPF) inválido") {
         this.service.message("CPF inválido!")
         console.log(err)
       } else {
@@ -50,6 +60,11 @@ export class FuncionarioCreateComponent implements OnInit {
       }
     })
     
+  }
+  
+
+  cancel(): void {
+    this.router.navigate(['funcionarios'])
   }
 
   errorValidNome() {
@@ -79,5 +94,4 @@ export class FuncionarioCreateComponent implements OnInit {
     }
     return false;
   }
-
 }

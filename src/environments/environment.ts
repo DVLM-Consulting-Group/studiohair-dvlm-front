@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://studio-hair-dvlm.herokuapp.com'
+  baseUrl: 'http://studio-hair-dvlm.herokuapp.com'
 };
 
 /*

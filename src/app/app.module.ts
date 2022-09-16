@@ -27,6 +27,9 @@ import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { FuncionarioReadComponent } from './views/components/funcionario/funcionario-read/funcionario-read.component';
 import { FuncionarioCreateComponent } from './views/components/funcionario/funcionario-create/funcionario-create.component';
+import { FuncionarioUpdateComponent } from './views/components/funcionario/funcionario-update/funcionario-update.component';
+import { FuncionarioDeleteComponent } from './views/components/funcionario/funcionario-delete/funcionario-delete.component';
+import { AgendamentoReadComponent } from './views/components/agendamento/agendamento-read/agendamento-read.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { FuncionarioCreateComponent } from './views/components/funcionario/funci
     HomeComponent,
     
     FuncionarioReadComponent,
-         FuncionarioCreateComponent
+         FuncionarioCreateComponent,
+         FuncionarioUpdateComponent,
+         FuncionarioDeleteComponent,
+         AgendamentoReadComponent
   ],
   imports: [
     BrowserModule,

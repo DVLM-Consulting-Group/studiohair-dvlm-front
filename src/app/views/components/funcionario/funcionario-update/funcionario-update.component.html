@@ -1,5 +1,5 @@
 <form class="form mat-elevation-z8">
-    <h1>Novo Profissional:</h1>
+    <h1>Atualizando Profissional:</h1>
     <mat-form-field class="full-width">
         <mat-label>Nome</mat-label>
         <input [(ngModel)]="funcionario.nome" [formControl]="nome" required name="nome" maxLength="60" matInput placeholder="Ex. João Silva">
@@ -25,6 +25,6 @@
     </mat-form-field>
     <br>
     <button class="mat-elevation-z8" (click)="cancel()" mat-raised-button color="warn">CANCELAR</button>
-    <button class="mat-elevation-z8" (click)="create()"[disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone() || errorValidEmail()" mat-raised-button color="accent" >CADASTRAR</button>
+    <button class="mat-elevation-z8" (click)="update()"[disabled]="errorValidNome() || errorValidCpf() || errorValidTelefone() || errorValidEmail()" mat-raised-button color="accent" >ATUALIZAR</button>
 
 </form>

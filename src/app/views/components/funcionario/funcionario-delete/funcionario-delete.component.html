@@ -1,0 +1,26 @@
+<form class="form mat-elevation-z8">
+    <h1>Deletando Profissional:</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="funcionario.nome"  name="nome" disabled  maxLength="60" matInput placeholder="Ex. João Silva">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>CPF</mat-label>
+        <input [(ngModel)]="funcionario.cpf"  name="cpf" disabled  maxLength="14" matInput placeholder="Ex. 999.999.999-99">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Telefone</mat-label>
+        <input  [(ngModel)]="funcionario.telefone"  name="telefone" disabled maxLength="15" matInput placeholder="Ex. (99) 99999-9999">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>E-mail</mat-label>
+        <input  [(ngModel)]="funcionario.email"  name="email" disabled maxLength="60" matInput placeholder="Ex. jsilva@email.com">
+    </mat-form-field>
+    <br>
+    <button class="mat-elevation-z8" (click)="cancel()" mat-raised-button color="warn">CANCELAR</button>
+    <button class="mat-elevation-z8" (click)="delete()" mat-raised-button color="accent" >DELETAR</button>
+
+</form>

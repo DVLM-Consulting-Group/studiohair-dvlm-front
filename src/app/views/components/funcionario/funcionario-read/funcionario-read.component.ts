@@ -14,7 +14,7 @@ export class FuncionarioReadComponent implements AfterViewInit {
 
   funcionarios: Funcionario[] = [];
 
-  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'email'];
+  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'email' , 'action'];
   dataSource = new MatTableDataSource<Funcionario>(this.funcionarios);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
