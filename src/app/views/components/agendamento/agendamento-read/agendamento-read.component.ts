@@ -71,4 +71,5 @@ export class AgendamentoReadComponent implements AfterViewInit {
       return 'cancelado'
     }
   }
+
 }

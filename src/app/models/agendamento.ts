@@ -3,7 +3,7 @@ import { DecimalPipe } from "@angular/common";
 export interface Agendamento {
     id?: any;
     dataAgendamento: any;
-    dataExServico: Date;
+    dataExServico: any;
     servico: any;
     observacoes: String;
     status: any;

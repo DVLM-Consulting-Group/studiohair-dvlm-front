@@ -10,6 +10,7 @@ import { ClienteReadComponent } from './views/components/cliente/cliente-read/cl
 import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
 import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
+import { AgendamentoCreateComponent } from './views/components/agendamento/agendamento-create/agendamento-create.component';
 
 const routes: Routes = [
   {
@@ -48,10 +49,13 @@ const routes: Routes = [
     path: 'clientes/delete/:id',
     component: ClienteDeleteComponent
   },
-
   {
     path: 'agendamentos',
     component: AgendamentoReadComponent
+  },
+  {
+    path: 'agendamentos/create',
+    component: AgendamentoCreateComponent
   }
 ];
 
