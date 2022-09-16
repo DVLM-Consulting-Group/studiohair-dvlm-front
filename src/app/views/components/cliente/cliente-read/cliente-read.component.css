@@ -1,0 +1,48 @@
+.create {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.create button {
+    width: 30%;
+    margin: 1rem auto;
+    background: linear-gradient(0deg, rgba(255, 44, 139, 0.803) 13%, #fb21c4cb 60%, #f425a5bc 91%);
+}
+
+.container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.tab th {
+    background: linear-gradient(0deg, rgba(255, 44, 139, 0.803) 13%, #fb21c4cb 60%, #f425a5bc 91%);
+    font-size: 0.8rem;
+}
+
+.tab td {
+    background-color: #4b4a4a;
+}
+
+
+#edit{
+    color: rgb(83, 142, 230);
+    margin-left: 0.7rem;
+}
+
+#delete{
+    color: rgb(244, 91, 91);
+    margin-left: 0.7rem;
+
+}

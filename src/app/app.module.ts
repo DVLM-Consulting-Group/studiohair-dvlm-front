@@ -30,6 +30,7 @@ import { FuncionarioCreateComponent } from './views/components/funcionario/funci
 import { FuncionarioUpdateComponent } from './views/components/funcionario/funcionario-update/funcionario-update.component';
 import { FuncionarioDeleteComponent } from './views/components/funcionario/funcionario-delete/funcionario-delete.component';
 import { AgendamentoReadComponent } from './views/components/agendamento/agendamento-read/agendamento-read.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AgendamentoReadComponent } from './views/components/agendamento/agendam
          FuncionarioCreateComponent,
          FuncionarioUpdateComponent,
          FuncionarioDeleteComponent,
-         AgendamentoReadComponent
+         AgendamentoReadComponent,
+         ClienteReadComponent
   ],
   imports: [
     BrowserModule,

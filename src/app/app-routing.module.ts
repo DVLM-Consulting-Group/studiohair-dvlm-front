@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FuncionarioUpdateComponent } from './views/components/funcionario/funcionario-update/funcionario-update.component';
 import { FuncionarioDeleteComponent } from './views/components/funcionario/funcionario-delete/funcionario-delete.component';
 import { AgendamentoReadComponent } from './views/components/agendamento/agendamento-read/agendamento-read.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,12 @@ const routes: Routes = [
     path: 'funcionarios/delete/:id',
     component: FuncionarioDeleteComponent
   },
+  {
+    path: 'clientes',
+    component: ClienteReadComponent
+  },
+
+
   {
     path: 'agendamentos',
     component: AgendamentoReadComponent
