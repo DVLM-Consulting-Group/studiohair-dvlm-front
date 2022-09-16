@@ -48,6 +48,10 @@ export class AgendamentoCreateComponent implements OnInit {
     })
   }
 
+  cancel(): void {
+    this.router.navigate(['agendamentos'])
+  }
+
   listarFuncionario(): void {
     this.FuncionarioService.findAll().subscribe(resposta => {
       this.funcionarios = resposta;

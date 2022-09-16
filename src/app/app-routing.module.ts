@@ -11,6 +11,7 @@ import { ClienteCreateComponent } from './views/components/cliente/cliente-creat
 import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { AgendamentoCreateComponent } from './views/components/agendamento/agendamento-create/agendamento-create.component';
+import { AgendamentoUpdateComponent } from './views/components/agendamento/agendamento-update/agendamento-update.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'agendamentos/create',
     component: AgendamentoCreateComponent
+  },
+  {
+    path: 'agendamentos/update/:id',
+    component: AgendamentoUpdateComponent
   }
 ];
 
