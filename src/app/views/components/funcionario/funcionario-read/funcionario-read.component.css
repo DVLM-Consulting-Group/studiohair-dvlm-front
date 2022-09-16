@@ -29,6 +29,7 @@ table {
 .tab th {
     background: linear-gradient(0deg, rgba(255, 44, 139, 0.803) 13%, #fb21c4cb 60%, #f425a5bc 91%);
     font-size: 0.8rem;
+    font-weight:500;
 }
 
 .tab td {

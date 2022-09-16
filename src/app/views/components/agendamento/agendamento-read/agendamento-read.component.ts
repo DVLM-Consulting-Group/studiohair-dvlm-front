@@ -4,6 +4,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { Agendamento } from 'src/app/models/agendamento';
 import { AgendamentoService } from 'src/app/services/agendamento.service';
+import { ClienteService } from 'src/app/services/cliente.service';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
 
 @Component({
@@ -23,7 +24,8 @@ export class AgendamentoReadComponent implements AfterViewInit {
   constructor(
     private service : AgendamentoService,
     private router : Router,
-    private funcionarioService: FuncionarioService){}
+    private funcionarioService: FuncionarioService,
+    private clienteService: ClienteService){}
 
   ngAfterViewInit() {
     this.findAll();
@@ -33,6 +35,7 @@ export class AgendamentoReadComponent implements AfterViewInit {
     this.service.findAll().subscribe((resposta) => {
       this.lista = resposta;
       this.listarFuncionario();
+      this.listarCliente();
       this.dataSource = new MatTableDataSource<Agendamento>(this.lista);
       this.dataSource.paginator = this.paginator;
     })
@@ -46,6 +49,15 @@ export class AgendamentoReadComponent implements AfterViewInit {
     this.lista.forEach(x => {
       this.funcionarioService.findById(x.funcionario).subscribe(resposta =>{
         x.funcionario = resposta.nome
+      })
+    })
+  }
+
+  
+  listarCliente():void {
+    this.lista.forEach(x => {
+      this.clienteService.findById(x.cliente).subscribe(resposta =>{
+        x.cliente = resposta.nome
       })
     })
   }
