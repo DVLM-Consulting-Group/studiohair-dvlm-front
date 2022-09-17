@@ -1,5 +1,3 @@
-import { DecimalPipe } from "@angular/common";
-
 export interface Agendamento {
     id?: any;
     dataAgendamento: any;
