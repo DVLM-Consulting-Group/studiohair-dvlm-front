@@ -16,7 +16,7 @@ export class AgendamentoReadComponent implements AfterViewInit {
 
   lista: Agendamento[] = [];
 
-  displayedColumns: string[] = ['abertura', 'execucao','funcionario','servico', 'cliente', 'valor','status','action'];
+  displayedColumns: string[] = ['abertura', 'execucao','funcionario','servico', 'cliente', 'status','action'];
   dataSource = new MatTableDataSource<Agendamento>(this.lista);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

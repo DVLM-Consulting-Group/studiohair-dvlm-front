@@ -32,7 +32,7 @@ export class AgendamentoService {
   }
 
   update(agendamento: Agendamento):Observable<Agendamento> {
-    const url = `${this.baseUrl}/agendamentos/${agendamento.id}`;
+    const url = `${this.baseUrl}/agendamentos/`;
     return this.http.put<Agendamento>(url, agendamento);
   }
 
