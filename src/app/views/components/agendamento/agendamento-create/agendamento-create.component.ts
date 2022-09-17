@@ -22,7 +22,7 @@ export class AgendamentoCreateComponent implements OnInit {
       servico: '',
       status: '',
       dataAgendamento: undefined,
-      dataExServico: '',
+      dataExServico: new Date(),
       valor: undefined
     }
 
@@ -42,6 +42,7 @@ export class AgendamentoCreateComponent implements OnInit {
   }
 
   create(): void {
+    this.formataData();
     this.service.create(this.ag).subscribe(resposta => {
       this.service.message("Agendamento Criado com sucesso!");
       this.router.navigate(['agendamentos'])
@@ -62,6 +63,11 @@ export class AgendamentoCreateComponent implements OnInit {
     this.ClienteService.findAll().subscribe(resposta => {
       this.clientes = resposta;
     })
+  }
+
+  formataData(): void {
+    let data = new Date(this.ag.dataExServico)
+    this.ag.dataExServico = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`
   }
 
 }

@@ -36,6 +36,7 @@ import { ClienteUpdateComponent } from './views/components/cliente/cliente-updat
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { AgendamentoCreateComponent } from './views/components/agendamento/agendamento-create/agendamento-create.component';
 import { AgendamentoUpdateComponent } from './views/components/agendamento/agendamento-update/agendamento-update.component';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { AgendamentoUpdateComponent } from './views/components/agendamento/agend
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
+    MatNativeDateModule,
     MatPaginatorModule,
     MatSnackBarModule,
     MatTabsModule
