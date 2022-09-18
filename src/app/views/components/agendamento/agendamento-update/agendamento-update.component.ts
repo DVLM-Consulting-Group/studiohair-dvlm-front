@@ -101,8 +101,17 @@ converteDados():void {
 } 
 
 formataData(): void {
-  let data = new Date(this.ag.dataExServico)
-  this.ag.dataExServico = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`
+  var date = new Date(this.ag.dataExServico);
+  var month = date.getMonth() + 1;
+  this.ag.dataExServico = date.getFullYear() + '-' +  this.adicionaZero(month) + '-' + date.getDate() + 'T' + this.ag.hora + ":00";
+  console.log(this.ag.dataExServico);
+}
+
+adicionaZero(numero: number){
+  if (numero <= 9) 
+      return "0" + numero;
+  else
+      return numero; 
 }
 
 }
