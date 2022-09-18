@@ -37,6 +37,8 @@ export class AgendamentoReadComponent implements AfterViewInit {
         if(x.status != "CANCELADO") {
           this.lista.push(x)
         }
+        var date = new Date(x.dataExServico)
+        x.dataExServico = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}` 
       })
       this.listarFuncionario();
       this.listarCliente();

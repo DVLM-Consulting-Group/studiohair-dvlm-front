@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8080'
+  baseUrl: 'https://studio-hair-dvlm.herokuapp.com'
 };
 
 /*

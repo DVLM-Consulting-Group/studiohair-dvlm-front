@@ -18,7 +18,9 @@ export class AgendamentoViewComponent implements OnInit {
     status: '',
     dataAgendamento: undefined,
     dataExServico: '',
-    valor: undefined
+    valor: undefined,
+    hora: ''
+
   }
   
   constructor(private route: ActivatedRoute,

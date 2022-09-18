@@ -22,7 +22,8 @@ export class AgendamentoUpdateComponent implements OnInit {
     status: '',
     dataAgendamento: undefined,
     dataExServico: new Date(),
-    valor: undefined
+    valor: undefined,
+    hora: ''
   }
 
 funcionarios: Funcionario[] = []

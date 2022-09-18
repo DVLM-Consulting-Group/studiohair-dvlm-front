@@ -8,4 +8,5 @@ export interface Agendamento {
     funcionario: any;
     cliente: any;
     valor: any;
+    hora: any;
 }
