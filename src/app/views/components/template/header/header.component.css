@@ -7,11 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(0deg, rgba(210, 11, 101, 1) 13%, #fb21c4cb 60%, #e90592b0 91%);
 }
 
-.hea {
-    border: 1px solid #F2DFE1;
-    padding: .4rem 15%;
-    background-color: #C2185B;
-    border-radius: 5px;
+h1 {
+    color: white;
 }

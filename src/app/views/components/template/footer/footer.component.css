@@ -5,16 +5,12 @@
     /* background-color: #F7C5DA; */
     color: white;
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 85%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(210, 11, 101, 1) 13%, #fb21c4cb 60%, #e90592b0 91%);
 }
 
-.pink {
-    border: 1px solid white;
-    background-color: #C2185B;
-    border-radius: 5px;
-    color: white;
-    padding: 0 2%;
+h5 {
+    color:white;
 }
