@@ -21,9 +21,9 @@ export class AgendamentoCreateComponent implements OnInit {
       observacoes: '',
       servico: '',
       status: '',
-      dataAgendamento: '',
+      dataAgendamento: undefined,
       dataExServico: new Date(),
-      valor: ''
+      valor: undefined
     }
 
   funcionarios: Funcionario[] = []
