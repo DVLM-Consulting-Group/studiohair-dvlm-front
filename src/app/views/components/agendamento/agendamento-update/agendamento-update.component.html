@@ -1,5 +1,14 @@
 <div class="container">
     <h1>Atualizar Agendamento:</h1>
+    <div class="datagendar">
+          <mat-form-field appearance="fill">
+            <mat-label>Escolha a data do Serviço</mat-label>
+            <input [(ngModel)]="ag.dataExServico" name="ag.dataExServico" matInput [matDatepicker]="picker">
+            <mat-hint>DD/MM/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
         <div class="labels">
             <mat-form-field appearance="fill">
                 <mat-label>Selecione um Profissional</mat-label>

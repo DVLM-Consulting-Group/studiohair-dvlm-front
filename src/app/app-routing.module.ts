@@ -12,6 +12,8 @@ import { ClienteUpdateComponent } from './views/components/cliente/cliente-updat
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { AgendamentoCreateComponent } from './views/components/agendamento/agendamento-create/agendamento-create.component';
 import { AgendamentoUpdateComponent } from './views/components/agendamento/agendamento-update/agendamento-update.component';
+import { AgendamentoViewComponent } from './views/components/agendamento/agendamento-view/agendamento-view.component';
+import { AgendamentoClosedComponent } from './views/components/agendamento/agendamento-closed/agendamento-closed.component';
 
 const routes: Routes = [
   {
@@ -61,6 +63,14 @@ const routes: Routes = [
   {
     path: 'agendamentos/update/:id',
     component: AgendamentoUpdateComponent
+  },
+  {
+    path: 'agendamentos/view/:id',
+    component: AgendamentoViewComponent
+  },
+  {
+    path: 'agendamentos/closed',
+    component: AgendamentoClosedComponent
   }
 ];
 

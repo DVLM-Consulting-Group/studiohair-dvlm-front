@@ -8,11 +8,11 @@ import { ClienteService } from 'src/app/services/cliente.service';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
 
 @Component({
-  selector: 'app-agendamento-read',
-  templateUrl: './agendamento-read.component.html',
-  styleUrls: ['./agendamento-read.component.css']
+  selector: 'app-agendamento-closed',
+  templateUrl: './agendamento-closed.component.html',
+  styleUrls: ['./agendamento-closed.component.css']
 })
-export class AgendamentoReadComponent implements AfterViewInit {
+export class AgendamentoClosedComponent implements AfterViewInit {
 
   lista: Agendamento[] = [];
 
@@ -34,7 +34,7 @@ export class AgendamentoReadComponent implements AfterViewInit {
   findAll(): void {
     this.service.findAll().subscribe((resposta) => {
       resposta.forEach(x => {
-        if(x.status != "CANCELADO") {
+        if(x.status == "CANCELADO") {
           this.lista.push(x)
         }
       })
@@ -44,11 +44,6 @@ export class AgendamentoReadComponent implements AfterViewInit {
       this.dataSource.paginator = this.paginator;
     })
   }
-
-  navigateToCreate():void{
-    this.router.navigate(['agendamentos/create'])
-  }
-
   listarFuncionario():void {
     this.lista.forEach(x => {
       this.funcionarioService.findById(x.funcionario).subscribe(resposta =>{

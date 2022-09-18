@@ -14,7 +14,6 @@ import { FuncionarioService } from 'src/app/services/funcionario.service';
 })
 export class AgendamentoUpdateComponent implements OnInit {
 
-
   ag: Agendamento = {
     funcionario: '',
     cliente: '',
@@ -22,7 +21,7 @@ export class AgendamentoUpdateComponent implements OnInit {
     servico: '',
     status: '',
     dataAgendamento: undefined,
-    dataExServico: '',
+    dataExServico: new Date(),
     valor: undefined
   }
 
@@ -45,6 +44,7 @@ ngOnInit(): void {
 }
 
 findById():void {
+  
   this.service.findById(this.ag.id).subscribe(resposta => {
     this.ag = resposta;
     this.converteDados();
@@ -52,6 +52,7 @@ findById():void {
 }
 
 update(): void {
+  this.formataData();
   this.service.update(this.ag).subscribe(resposta => {
     this.service.message("Agendamento Atualizado com sucesso!");
     this.router.navigate(['agendamentos'])
@@ -97,5 +98,10 @@ converteDados():void {
     this.ag.servico = 5;
   }
 } 
+
+formataData(): void {
+  let data = new Date(this.ag.dataExServico)
+  this.ag.dataExServico = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`
+}
 
 }

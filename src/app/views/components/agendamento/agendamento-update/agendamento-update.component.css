@@ -4,7 +4,13 @@
 }
 h1 {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+
+.datagendar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .labels {
@@ -19,7 +25,7 @@ h1 {
 
 textarea {
     min-height: 4rem;
-    max-height: 20rem;
+    max-height: 10rem;
 }
 
 button {

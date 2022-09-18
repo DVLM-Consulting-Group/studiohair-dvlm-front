@@ -20,6 +20,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
@@ -36,7 +37,9 @@ import { ClienteUpdateComponent } from './views/components/cliente/cliente-updat
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { AgendamentoCreateComponent } from './views/components/agendamento/agendamento-create/agendamento-create.component';
 import { AgendamentoUpdateComponent } from './views/components/agendamento/agendamento-update/agendamento-update.component';
+import { AgendamentoViewComponent } from './views/components/agendamento/agendamento-view/agendamento-view.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AgendamentoClosedComponent } from './views/components/agendamento/agendamento-closed/agendamento-closed.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,9 @@ import { MatNativeDateModule } from '@angular/material/core';
          ClienteUpdateComponent,
          ClienteDeleteComponent,
          AgendamentoCreateComponent,
-         AgendamentoUpdateComponent
+         AgendamentoUpdateComponent,
+         AgendamentoViewComponent,
+         AgendamentoClosedComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +90,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatNativeDateModule,
     MatPaginatorModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

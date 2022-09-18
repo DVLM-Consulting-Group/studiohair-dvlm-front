@@ -12,7 +12,11 @@
             <a mat-list-item routerLink="clientes">
                 <i class="material-icons">person_pin</i> CLIENTES
             </a>
-            <a mat-list-item routerLink="agendamentos">
+            <a mat-list-item  [matMenuTriggerFor]="menu">
+                <mat-menu  #menu="matMenu">
+                    <a routerLink="agendamentos" mat-menu-item>Abertos ou Encerrados</a>
+                    <a routerLink="agendamentos/closed" mat-menu-item>Cancelados</a>
+                </mat-menu>
                 <i class="material-icons">view_agenda</i> AGENDAMENTOS
             </a>
         </mat-nav-list>

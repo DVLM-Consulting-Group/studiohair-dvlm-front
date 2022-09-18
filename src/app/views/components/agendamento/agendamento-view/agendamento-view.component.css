@@ -1,0 +1,24 @@
+.container {
+    width: 70%;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+
+#dataabertura {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    margin: 2rem;
+}
+
+#observacoes {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    margin-top: .5rem;
+}
