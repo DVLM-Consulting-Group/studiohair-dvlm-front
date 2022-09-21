@@ -7,15 +7,12 @@
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-    </div>
 
-    <div fxFlex="50" fxFill fxLayoutAlign="start center">
         <mat-form-field>
             <mat-label>Escolha a hora do Serviço</mat-label>
             <input matInput type="time" placeholder="" [(ngModel)]="ag.hora" #time/>
         </mat-form-field>
     </div>
-
 
     <div class="labels">
         <mat-form-field appearance="fill">

@@ -9,8 +9,9 @@ h1 {
 
 .datagendar {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
+    
 }
 
 .labels {
@@ -25,7 +26,7 @@ h1 {
 
 textarea {
     min-height: 4rem;
-    max-height: 10rem;
+    max-height: 15rem;
 }
 
 button {
