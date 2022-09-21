@@ -8,32 +8,32 @@ Abaixo segue os protótipos que foram desenvolvidos.
 
 #### HomePage⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20home.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20home.png" width="auto" height="auto" title="hover text">
 </p>
 
 #### Lista dos Profissionais⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair_profissionais.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair_profissionais.png" width="auto" height="auto" title="hover text">
 </p>
 
 #### Lista dos Clientes⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20clientes.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20clientes.png" width="auto" height="auto" title="hover text">
 </p>
 
 #### Lista dos Agendamentos⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Agendamentos.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Agendamentos.png" width="auto" height="auto" title="hover text">
 </p>
 
 #### Cadastrando Novo Cliente⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novos%20Clientes.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novos%20Clientes.png" width="auto" height="auto" title="hover text">
 </p>
 
 #### Cadastrando Novo Agendamento⭐
 <p align="center">
-  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novo%20Agendamento.png" width="1600" height="600" title="hover text">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novo%20Agendamento.png" width="auto" height="auto" title="hover text">
 </p>
 
 ## 👨‍💻Tecnologias Utilizadas
