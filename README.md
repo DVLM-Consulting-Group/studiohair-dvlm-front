@@ -1,27 +1,65 @@
-# Studiohair
+# 💅👩StudioHair - Sistema de Agendamento
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+Este projeto tem como objetivo realizar a gestão de agendamentos de serviços prestados pelos colaboradores de um salão de beleza aos seus clientes bem como também,realizar o cadastramento dos seus clientes e colaboradores.  
 
-## Development server
+## Protótipos do StudioHair
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Abaixo segue os protótipos que foram desenvolvidos.
 
-## Code scaffolding
+#### HomePage⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20home.png" width="1600" height="600" title="hover text">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Lista dos Profissionais⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair_profissionais.png" width="1600" height="600" title="hover text">
+</p>
 
-## Build
+#### Lista dos Clientes⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20clientes.png" width="1600" height="600" title="hover text">
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Lista dos Agendamentos⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Agendamentos.png" width="1600" height="600" title="hover text">
+</p>
 
-## Running unit tests
+#### Cadastrando Novo Cliente⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novos%20Clientes.png" width="1600" height="600" title="hover text">
+</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Cadastrando Novo Agendamento⭐
+<p align="center">
+  <img src="https://github.com/DVLM-Consulting-Group/studiohair-dvlm-front/blob/main/prototipos/Studiohair%20-%20Novo%20Agendamento.png" width="1600" height="600" title="hover text">
+</p>
 
-## Running end-to-end tests
+## 👨‍💻Tecnologias Utilizadas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Back-End
+<ul><li>Java 11</li>
+<li>Spring Boot DevTools</li>
+<li>Spring Web</li>
+<li>Spring Data JPA</li>
+<li>Hibernate</li>
+<li>MySQL && H2</li>
+<li>Validations</li>
+<li>Padrão DTO (Data Transfer Objects)</li>
+<li>Postman || Insomnia</li>
+<li>API REST</li>
+<li>Deploy no Heroku</li>
+</ul>
 
-## Further help
+#### Front-End
+<ul><li>Angular 14</li>
+<li>Angular Material</li>
+<li>Angular CLI</li>
+<li>NPM</li>
+<li>Básico de TypeScript</li>
+<li>HTML5, CSS3</li>
+</ul>
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
