@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Agendamento } from 'src/app/models/agendamento';
 import { AgendamentoService } from 'src/app/services/agendamento.service';
@@ -25,7 +26,10 @@ export class AgendamentoReadComponent implements AfterViewInit {
     private service : AgendamentoService,
     private router : Router,
     private funcionarioService: FuncionarioService,
-    private clienteService: ClienteService){}
+    private clienteService: ClienteService,
+    private titleService: Title){
+      this.titleService.setTitle('StudioHair - Agendamentos')
+    }
 
   ngAfterViewInit() {
     this.findAll();

@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -21,7 +22,10 @@ export class ClienteReadComponent implements  AfterViewInit {
 
   constructor(
     private service : ClienteService,
-    private router : Router){}
+    private router : Router,
+    private titleService: Title){
+      this.titleService.setTitle('StudioHair - Clientes')
+    }
 
   ngAfterViewInit() {
     this.findAll();

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Funcionario } from 'src/app/models/funcionario';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
@@ -22,7 +23,10 @@ export class FuncionarioDeleteComponent implements OnInit {
 
   constructor(private router : Router,
     private service : FuncionarioService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private titleService: Title) { 
+      this.titleService.setTitle('StudioHair - Excluir Profissional')
+    }
 
   ngOnInit(): void {
     this.id_func = this.route.snapshot.paramMap.get('id')!

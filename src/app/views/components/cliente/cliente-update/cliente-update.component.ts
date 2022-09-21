@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -31,7 +32,10 @@ export class ClienteUpdateComponent implements OnInit {
 
   constructor(private router : Router,
     private service : ClienteService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private titleService: Title) {
+      this.titleService.setTitle('StudioHair - Atualizar Cliente')
+     }
 
   ngOnInit(): void {
     this.id_cli = this.route.snapshot.paramMap.get('id')!

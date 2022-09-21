@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Cliente } from 'src/app/models/cliente';
 import { ClienteService } from 'src/app/services/cliente.service';
@@ -25,7 +26,10 @@ export class ClienteCreateComponent implements OnInit {
   email = new FormControl('', [Validators.minLength(5)])
 
   constructor(private router : Router,
-    private service : ClienteService) { }
+    private service : ClienteService,
+    private titleService: Title) {
+      this.titleService.setTitle('StudioHair - Novo Cliente')
+     }
 
   ngOnInit(): void {
   }

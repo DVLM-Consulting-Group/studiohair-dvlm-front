@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Agendamento } from 'src/app/models/agendamento';
 import { Cliente } from 'src/app/models/cliente';
@@ -34,8 +35,9 @@ export class AgendamentoCreateComponent implements OnInit {
     private FuncionarioService: FuncionarioService,
     private ClienteService: ClienteService,
     private service: AgendamentoService,
-    private router: Router
-  ) { }
+    private router: Router,
+    private titleService: Title
+  ) { this.titleService.setTitle('StudioHair - Novo Agendamento') }
 
   ngOnInit(): void {
     this.listarFuncionario();

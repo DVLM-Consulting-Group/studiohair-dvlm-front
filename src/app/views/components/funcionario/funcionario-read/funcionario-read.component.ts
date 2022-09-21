@@ -4,6 +4,7 @@ import { AfterViewInit, Component, ViewChild} from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-funcionario-read',
@@ -21,7 +22,10 @@ export class FuncionarioReadComponent implements AfterViewInit {
 
   constructor(
     private service : FuncionarioService,
-    private router : Router){}
+    private router : Router,
+    private titleService: Title){
+      this.titleService.setTitle('StudioHair - Profissionais')
+    }
 
   ngAfterViewInit() {
     this.findAll();

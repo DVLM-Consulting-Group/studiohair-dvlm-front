@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Agendamento } from 'src/app/models/agendamento';
 import { AgendamentoService } from 'src/app/services/agendamento.service';
@@ -25,7 +26,10 @@ export class AgendamentoViewComponent implements OnInit {
   
   constructor(private route: ActivatedRoute,
     private service: AgendamentoService,
-    private router: Router) { }
+    private router: Router,
+    private titleService: Title) {
+      this.titleService.setTitle('StudioHair - Observações do Agendamento')
+     }
 
   ngOnInit(): void {
     this.ag.id = this.route.snapshot.paramMap.get("id");

@@ -3,6 +3,7 @@ import { FuncionarioService } from './../../../../services/funcionario.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-funcionario-create',
@@ -25,7 +26,10 @@ export class FuncionarioCreateComponent implements OnInit {
   email = new FormControl('', [Validators.minLength(5)])
 
   constructor(private router : Router,
-    private service : FuncionarioService) { }
+    private service : FuncionarioService,
+    private titleService: Title) { 
+      this.titleService.setTitle('StudioHair - Novo Profissional')
+    }
 
   ngOnInit(): void {
   }

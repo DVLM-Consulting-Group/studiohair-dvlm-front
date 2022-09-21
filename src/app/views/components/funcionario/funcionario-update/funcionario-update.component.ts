@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Funcionario } from 'src/app/models/funcionario';
 import { FuncionarioService } from 'src/app/services/funcionario.service';
@@ -31,7 +32,10 @@ export class FuncionarioUpdateComponent implements OnInit {
 
   constructor(private router : Router,
     private service : FuncionarioService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private titleService: Title) {
+      this.titleService.setTitle('StudioHair - Atualizar Profissional')
+     }
 
   ngOnInit(): void {
     this.id_func = this.route.snapshot.paramMap.get('id')!
