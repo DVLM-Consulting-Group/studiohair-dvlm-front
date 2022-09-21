@@ -20,8 +20,8 @@
 
     <div class="labels">
         <mat-form-field appearance="fill">
-            <mat-label>Selecione um Profissional</mat-label>
-            <mat-select [(value)]="ag.funcionario">
+             <mat-label>Selecione um Profissional</mat-label>
+           <!----> <mat-select [(value)]="ag.funcionario">
                 <mat-option *ngFor="let func of funcionarios" value="{{ func.id }}">{{ func.nome }}</mat-option>
             </mat-select>
         </mat-form-field>

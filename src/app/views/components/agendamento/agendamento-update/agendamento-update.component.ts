@@ -38,17 +38,17 @@ constructor(
 ) { }
 
 ngOnInit(): void {
-  this.ag.id = this.route.snapshot.paramMap.get('id')
+  this.ag.id = this.route.snapshot.paramMap.get('id')!
   this.findById();
   this.listarFuncionario();
   this.listarClientes();
 }
 
 findById():void {
-  
+  console.log(this.ag);
   this.service.findById(this.ag.id).subscribe(resposta => {
     this.ag = resposta;
-    this.converteDados();
+  this.converteDados();
   })
 }
 
@@ -82,7 +82,7 @@ converteDados():void {
   } else if (this.ag.status == 'ENCERRADO') {
     this.ag.status = 1;
   } else {
-    this.ag.status == 2;
+    this.ag.status = 2;
   } 
 
   if(this.ag.servico == 'CORTE'){
